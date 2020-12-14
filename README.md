@@ -11,6 +11,6 @@ A subset of the COCO dataset was used containing data of 3 classess namely, Vehi
 <img src = "/Images/dataset_3.png" height = 350>
 
 ## Results
-Here are some of the results obtained from the RPN. The RPN provides initial estimation of the bounding boxes which can be further refined by using a FasterRCNN <br>
+The RPN provides initial estimation of the bounding boxes which can be further refined by using applying a FasterRCNN head on these proposals. <br>
 <img src = "/Images/pre_NMS_1.png" height = 350> <img src = "/Images/post_NMS_1.png" height = 350>
 <img src = "/Images/pre_NMS_2.png" height = 350> <img src = "/Images/post_NMS_2.png" height = 350>
