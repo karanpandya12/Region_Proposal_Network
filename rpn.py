@@ -305,38 +305,6 @@ class RPNHead(torch.nn.Module):
         return loss, loss_c, loss_r
 
 
-    # Post process for the outputs for a batch of images
-    # Input:
-    #       out_c:  (bz,1,grid_size[0],grid_size[1])}
-    #       out_r:  (bz,4,grid_size[0],grid_size[1])}
-    #       IOU_thresh: scalar that is the IOU threshold for the NMS
-    #       keep_num_preNMS: number of masks we will keep from each image before the NMS
-    #       keep_num_postNMS: number of masks we will keep from each image after the NMS
-    # Output:
-    #       nms_clas_list: list:len(bz){(Post_NMS_boxes)} (the score of the boxes that the NMS kept)
-    #       nms_prebox_list: list:len(bz){(Post_NMS_boxes,4)} (the coordinates of the boxes that the NMS kept)
-
-    def postprocess(self,out_c,out_r, IOU_thresh=0.5, keep_num_preNMS=50, keep_num_postNMS=10):
-        ####################################
-        # TODO postprocess a batch of images
-        #####################################
-        return nms_clas_list, nms_prebox_list
-
-
-    def postprocessImg(self,mat_clas,mat_coord, IOU_thresh,keep_num_preNMS, keep_num_postNMS):
-        # Post process the output for one image
-        # Input:
-        #      mat_clas: (1,grid_size[0],grid_size[1])}  (scores of the output boxes)
-        #      mat_coord: (4,grid_size[0],grid_size[1])} (encoded coordinates of the output boxes)
-        # Output:
-        #       nms_clas: (Post_NMS_boxes)
-        #       nms_prebox: (Post_NMS_boxes,4) (decoded coordinates of the boxes that the NMS kept)
-        ######################################
-        # TODO postprocess a single image
-        #####################################
-
-        return nms_clas, nms_prebox
-
     def NMS(self,clas,prebox,method='gauss',gauss_sigma=0.5):
         ##################################
         # TODO perform NSM
