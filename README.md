@@ -6,4 +6,5 @@ Region Proposal Networks (RPNs) are "attention mechanisms" for the object detect
 boxes can further refined and tightened by the instance segmentation heads as well as classified in their corresponding classes.
 
 ## Dataset
-A subset of the COCO dataset was used containing data of 3 classess namely, Vehicles, People and Animals.
+A subset of the COCO dataset was used containing data of 3 classess namely, Vehicles, People and Animals. Here are some example images from the dataset:
+<img src = "/Images/dataset_1.png" width = 100>
