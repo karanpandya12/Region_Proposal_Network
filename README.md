@@ -9,3 +9,8 @@ boxes can further refined and tightened by the instance segmentation heads as we
 A subset of the COCO dataset was used containing data of 3 classess namely, Vehicles, People and Animals. Here are some example images from the dataset: <br>
 <img src = "/Images/dataset_1.png" height = 350> <img src = "/Images/dataset_2.png" height = 350>
 <img src = "/Images/dataset_3.png" height = 350>
+
+## Results
+Here are some of the results obtained from the RPN. The RPN provides initial estimation of the bounding boxes. NMS refers to Non Maximum Suppression.
+<img src = "/Images/pre_NMS_1.png" height = 350> <img src = "/Images/post_NMS_1.png" height = 350>
+<img src = "/Images/pre_NMS_2.png" height = 350> <img src = "/Images/post_NMS_2.png" height = 350>
